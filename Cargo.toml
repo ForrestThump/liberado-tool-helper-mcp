@@ -1,0 +1,19 @@
+[package]
+name = "liberado-tool-helper-mcp"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82"
+license = "MIT"
+
+[dependencies]
+turbomcp = { version = "3.1.2", features = ["http"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "signal"] }
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[dev-dependencies]
+serial_test = "3"
+wiremock = "0.6"
