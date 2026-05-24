@@ -26,11 +26,7 @@ so AI agents never need to manage `user_id`, `agent_id`, or filter parameters.
 
 ## Motivation
 
-The previous Python `mem0-mcp` wrapper exposed raw CRUD tools that required the model to
-pass `user_id="openclaw"` on every call. This meant the model could accidentally scope
-memories incorrectly, and procedural/tool-selection knowledge was mixed into the same
-store as general episodic memories. This service eliminates both problems by hardcoding
-the scope boundaries inside the MCP layer.
+Endlessly tweaking system prompts is annoying.
 
 ## Architecture
 
